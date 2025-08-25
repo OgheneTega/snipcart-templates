@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head><title>Templates</title></head>
+  <head>
+    <title>Templates</title>
+    <style>
+      .snipcart-payment-alert {
+        background: #fffbea;
+        border-left: 4px solid #f5a623;
+        padding: 12px 16px;
+        margin: 10px 0;
+        font-size: 15px;
+        color: #6b5507;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
 
-    <body>
-       <div id="snipcart-templates">
-    <address-fields section="top">
+  <body>
+    <div id="snipcart-templates">
+      <address-fields section="top">
         <div>
-            <snipcart-label for="company">
-                Company Name
-            </snipcart-label>
-            <snipcart-input name="company">
-            </snipcart-input>
+          <snipcart-label for="company">
+            Company Name
+          </snipcart-label>
+          <snipcart-input name="company"></snipcart-input>
         </div>
-    </address-fields>
-</div>
-    </body>
+      </address-fields>
+
+      <featured-payment-methods>
+        <div class="snipcart-payment-alert">
+          ⚠️ Paystack is only available for orders above
+          <strong>₦2,500,000</strong>.
+        </div>
+      </featured-payment-methods>
+    </div>
+  </body>
 </html>
