@@ -2,6 +2,24 @@
 <html>
   <head>
     <title>Templates</title>
+    <style>
+      .alert-box {
+        color: #555;
+        border-radius: 10px;
+        font-family: Tahoma, Geneva, Arial, sans-serif;
+        font-size: 11px;
+        padding: 10px 36px;
+        margin: 10px;
+      }
+      .alert-box span {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .warning {
+        background: #fff8c4 url('../../images/warning.png') no-repeat 10px 50%;
+        border: 1px solid #f2c779;
+      }
+    </style>
   </head>
 
   <body>
@@ -14,6 +32,14 @@
           <snipcart-input name="company"></snipcart-input>
         </div>
       </address-fields>
+
+      <featured-payment-methods>
+        <div class="alert-box warning">
+          <span>⚠️ Paystack Notice:</span>
+          Paystack is only available for orders above <strong>₦2,500,000</strong>.
+        </div>
+      </featured-payment-methods>
     </div>
   </body>
 </html>
+
