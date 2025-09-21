@@ -48,6 +48,24 @@
             background: #ffffff;
             border: 1px solid #00000030;
         }
+
+
+        .snipcart-payment-alert {
+    background: #f0f7ff; /* light blue background */
+    border-left: 4px solid #0068c8; /* your brand blue */
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #0068c8;
+    line-height: 1.4;
+    box-shadow: 0 0 8px rgba(0, 104, 200, 0.25); /* subtle blue glow */
+  }
+
+  .snipcart-payment-alert__icon {
+    margin-right: 6px;
+    font-weight: bold;
+  }
     </style>
 </head>
 
@@ -71,10 +89,13 @@
     </ul>
   </div>
 
-  <!-- 🚀 Your custom addition -->
-  <div class="alert-box warning">
-    <span>⚠️ Paystack Notice:</span>
-    Paystack is only available for orders above <strong>₦2,500,000</strong>.
+ <!-- 🚀 Custom Paystack alert -->
+  <div class="snipcart-payment-alert">
+    <p>
+      <span class="snipcart-payment-alert__icon">⚠️</span>
+      Paystack is only available for orders above
+      <strong>₦2,500,000</strong>. We’re working to raise this limit for a smoother payment experience.
+    </p>
   </div>
         </featured-payment-methods>
     </div>
