@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
     <title>Templates</title>
     <style>
-      .alert-box {
-        color: #555;
-        border-radius: 10px;
-        font-family: Tahoma, Geneva, Arial, sans-serif;
-        font-size: 11px;
-        padding: 10px 36px;
-        margin: 10px;
-      }
-      .alert-box span {
-        font-weight: bold;
-        text-transform: uppercase;
-      }
-      .warning {
-        background: #0068c8;
-        border: 1px solid #f2c779;
-      }
+        .paragraph {
+            width: 450px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        h3 {
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-weight: 800;
+            font-size: 18px;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        .alert-box {
+            color: #0068c8;
+            display: flex;
+            flex-flow: column;
+            border-radius: 16px;
+            font-family: Roboto;
+            width: min-content;
+            line-height: 1.2;
+            letter-spacing: 0.5px;
+            padding: 15px 30px;
+            margin: 80px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 0 rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 104, 200, 0.4);
+
+        }
+
+        .alert-box span {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .warning {
+            background: #ffffff;
+            border: 1px solid #00000030;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="snipcart-templates">
-      <address-fields section="top">
-        <div>
-          <snipcart-label for="company">
-            Company Name
-          </snipcart-label>
-          <snipcart-input name="company"></snipcart-input>
-        </div>
-      </address-fields>
-
-      <featured-payment-methods>
-        <div class="alert-box warning">
-          <span>⚠️ Paystack Notice:</span>
-          Paystack is only available for orders above <strong>₦2,500,000</strong>.
-        </div>
-      </featured-payment-methods>
+        <featured-payment-methods>
+            <div class="alert-box warning">
+                <img src="./assets/paystack.png" alt="paystack logo" width="300px" height="120px">
+                <h3>IMPORTANT NOTICE:</h3>
+                <p class="paragraph">At the moment, Paystack is only available for orders up to <span>₦2,500,000</span>.
+                    We are already working on increasing this limit so you can enjoy an even better payment experience.
+                </p>
+            </div>
+        </featured-payment-methods>
     </div>
-  </body>
-</html>
+</body>
 
+</html>
