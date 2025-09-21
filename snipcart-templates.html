@@ -51,21 +51,24 @@
 
 
         .snipcart-payment-alert {
-    background: #f0f7ff; /* light blue background */
-    border-left: 4px solid #0068c8; /* your brand blue */
-    padding: 10px 14px;
-    margin: 12px 0;
-    border-radius: 6px;
-    font-size: 13px;
-    color: #0068c8;
-    line-height: 1.4;
-    box-shadow: 0 0 8px rgba(0, 104, 200, 0.25); /* subtle blue glow */
-  }
+            background: #f0f7ff;
+            /* light blue background */
+            border-left: 4px solid #0068c8;
+            /* your brand blue */
+            padding: 10px 14px;
+            margin: 12px 0;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #0068c8;
+            line-height: 1.4;
+            box-shadow: 0 0 8px rgba(0, 104, 200, 0.25);
+            /* subtle blue glow */
+        }
 
-  .snipcart-payment-alert__icon {
-    margin-right: 6px;
-    font-weight: bold;
-  }
+        .snipcart-payment-alert__icon {
+            margin-right: 6px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -73,38 +76,41 @@
     <div id="snipcart-templates">
         <featured-payment-methods>
             <div class="snipcart-featured-payment-methods">
-    <h3 class="snipcart__font--secondary snipcart__font--bold  snipcart-featured-payment-methods__title">
-      <a :href="securedByUrl" class="snipcart-featured-payment-methods__link" target="_blank" rel="nofollow noopener">
-        <icon name="lock" class="snipcart-featured-payment-methods__title-icon"></icon>
-        {{ $localize('cart.secured_by') }}
-      </a>
-    </h3>
-    <ul class="snipcart-featured-payment-methods__list">
-      <li class="snipcart-featured-payment-methods__list-item">
-        <icon name="visa" alt="Visa" class="snipcart__icon--brand"></icon>
-      </li>
-      <li class="snipcart-featured-payment-methods__list-item">
-        <icon name="mastercard" alt="Mastercard" class="snipcart__icon--brand"></icon>
-      </li>
-      <li class="snipcart-featured-payment-methods__list-item">
-        <icon name="card-amex" custom="true" alt="Amex" height="60px" class="snipcart__icon--brand" style="height: 60px !important;"></icon>
-    </li>  
-    </ul>
-    <p>
-      <span class="snipcart-payment-alert__icon">⚠️</span>
-      Paystack is only available for orders above
-      <strong>₦2,500,000</strong>. We’re working to raise this limit for a smoother payment experience.
-    </p>
-  </div>
+                <h3 class="snipcart__font--secondary snipcart__font--bold  snipcart-featured-payment-methods__title">
+                    <a :href="securedByUrl" class="snipcart-featured-payment-methods__link" target="_blank"
+                        rel="nofollow noopener">
+                        <icon name="lock" class="snipcart-featured-payment-methods__title-icon"></icon>
+                        {{ $localize('cart.secured_by') }}
+                    </a>
+                </h3>
+                <ul class="snipcart-featured-payment-methods__list">
+                    <li class="snipcart-featured-payment-methods__list-item">
+                        <icon name="visa" alt="Visa" class="snipcart__icon--brand"></icon>
+                    </li>
+                    <li class="snipcart-featured-payment-methods__list-item">
+                        <icon name="mastercard" alt="Mastercard" class="snipcart__icon--brand"></icon>
+                    </li>
+                    <li class="snipcart-featured-payment-methods__list-item">
+                        <icon name="card-amex" custom="true" alt="Amex" height="60px" class="snipcart__icon--brand"
+                            style="height: 60px !important;"></icon>
+                    </li>
+                </ul>
+                <p>
+                    <span class="snipcart-payment-alert__icon">⚠️</span>
+                    Paystack is only available for orders above
+                    <strong>₦2,500,000</strong>. We are working to raise this limit for a smoother payment experience.
+                </p>
+            </div>
 
-<!--  <!-- 🚀 Custom Paystack alert -->
-<!--   <div class="snipcart-payment-alert">
-    <p>
-      <span class="snipcart-payment-alert__icon">⚠️</span>
-      Paystack is only available for orders above
-      <strong>₦2,500,000</strong>. We’re working to raise this limit for a smoother payment experience.
-    </p>
-  </div> --> -->
+            <!-- 🚀 Custom Paystack alert
+            <div class="snipcart-payment-alert">
+                <p>
+                    <span class="snipcart-payment-alert__icon">⚠️</span>
+                    Paystack is only available for orders above
+                    <strong>₦2,500,000</strong>. We’re working to raise this limit for a smoother payment experience.
+                </p>
+            </div> -->
+
         </featured-payment-methods>
     </div>
 </body>
